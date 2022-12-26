@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Navbar({ fixed }) {
-  const the_style = {backgroundColor:'#2c283c'}
+  const the_style = {backgroundColor:'#000C22'}
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -9,7 +9,7 @@ export default function Navbar({ fixed }) {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  text-white"
               href="#twista"
             >
               TheCodeBlock
