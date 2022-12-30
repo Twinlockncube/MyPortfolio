@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AboutMe from './AboutMe';
 import Banner from './Banner';
 import Navbar from './Navbar';
 import Projects from './Projects';
@@ -10,10 +11,11 @@ if (document.getElementById('root')) {
 
     Index.render(
         <React.StrictMode>
-            <div className='container top_container'>
+            <div className='flex flex-col space-y-0'>
                 <Navbar/>
                 <Banner/>
                 <Projects/>
+                <AboutMe/>
             </div>
         </React.StrictMode>
     )
