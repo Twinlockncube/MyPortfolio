@@ -11,7 +11,7 @@ export default function Navbar({ fixed }) {
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  text-white"
               href="#twista"
             >
-              TheCodeBlock
+              twinlockncube.com
             </a>
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -31,7 +31,7 @@ export default function Navbar({ fixed }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
                   <i className="fas fa-thin fa-user-tie text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About Me</span>
@@ -39,7 +39,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
                   <i className="fas fa-envelope text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
@@ -47,10 +47,10 @@ export default function Navbar({ fixed }) {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  className="px-3 py-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
+                  href="https://github.com/Twinlockncube" target= "_blank"
                 >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
+                  <i className="fas fa-brands fa-github text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Github</span>
                 </a>
               </li>
             </ul>

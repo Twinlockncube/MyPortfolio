@@ -1,66 +1,36 @@
 import React from 'react';
-import image1 from '../../images/laravel.jpg';
+import project1 from '../../images/dark_room.jpg';
+import project2 from '../../images/coder.jpg';
+import project3 from '../../images/laravel.jpg';
+import Card from './Card';
 
 function Projects(props) {
-    const style_1 = {
-                        backgroundImage: `url(${image1})`,
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
-                    };
-   
+   const [project_list,setCards] = React.useState(projects)
+   const cards_list = []
+   project_list.forEach(project => {
+    cards_list.push(
+        <Card
+            image = {project.image}
+            description = {project.description}
+        />
+    )
+   });
+   const card_rows = []
+   const card_row = []
+   cards_list.forEach(card => {
+        if(card_row.length ==3){
+            card_rows.push(card_row)
+            card_row.splice(0, card_row.length) //empty the card row array
+        }
+        card_row.push(card)
+   });
     return (
     <div className='wrapper flex flex-col border-2 border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
         <div className='intro pt-3 flex justify-center'>
             <span className='text-xl'>Explore the projects completed using various tools in the Web Stack</span>
         </div>
-        <div className='grid grid-cols-3 gap-4 pt-5'>
-            
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img className="rounded-t-lg hover:scale-105" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                        <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
-
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img className="rounded-t-lg hover:scale-105" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                        <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img className="rounded-t-lg hover:scale-105" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                        <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                    </a>
-                </div>
-            </div>
+        <div className='flex flex-row gap-4 pt-5'>
+            {card_rows}
         </div>
     </div>
     );
