@@ -9,25 +9,21 @@ function Projects(props) {
    
    const source = [
         {
-            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order',
-            image:'https://flowbite.com/docs/images/blog/image-1.jpg',
-            title:'Laravel'
+            description: 'This is a School Management System which includes registration, attendance register, assessment and many other features. Laravel and JQuery were used',
+            image:`${project1}`,
+            title:'School Management System'
         },
         {
-            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order',
-            image:'https://flowbite.com/docs/images/blog/image-1.jpg',
-            title:'React'
+            description: 'A portfolio created in Laravel and React JS. It shows some of my projects',
+            image:`${project2}`,
+            title:'My Portfolio'
         },
         {
-            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order',
-            image:'https://flowbite.com/docs/images/blog/image-1.jpg',
-            title:'Javascript'
+            description: 'A simple website for capturing individuals\' temparatures after they have been granted access to the premises during Covid. Created using PHP Laravel',
+            image:`${project3}`,
+            title:'Temp Web'
         },
-        {
-            description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order',
-            image:'https://flowbite.com/docs/images/blog/image-1.jpg',
-            title:'CSS'
-        },
+
         
    ]
    const [cards,setCards] = React.useState(source)
@@ -40,6 +36,7 @@ function Projects(props) {
             image = {project.image}
             description = {project.description}
             title = {project.title}
+            key = {project.title}
         />
     )
    });
@@ -59,7 +56,7 @@ function Projects(props) {
      
 
    React.useEffect(() => {
-    fetch('https://api.quotable.io/random')
+    fetch('https://api.quotable.io/random')//Example Api Consumption
       // .then((response) => {response.json() })
        .then((data) => {
           setCards(source);
@@ -73,11 +70,11 @@ function Projects(props) {
 
 
     return (
-    <div className='wrapper flex flex-row border-2 border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
+    <div className='wrapper flex flex-col border-2 border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
         <div className='intro pt-3 flex justify-center'>
             <span className='text-xl'>Explore the projects completed using various tools in the Web Stack</span>
         </div>
-        <div className='grid grid-row gap-4 pt-5'>
+        <div className='flex flex-row gap-4 pt-5'>
             {card_rows}
         </div>
     </div>
