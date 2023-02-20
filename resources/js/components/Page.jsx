@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import AboutMe from './AboutMe';
 import Banner from './Banner';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import Projects from './Projects';
 
@@ -16,6 +17,7 @@ if (document.getElementById('root')) {
                 <Banner/>
                 <Projects/>
                 <AboutMe/>
+                <Footer/>
             </div>
         </React.StrictMode>
     )

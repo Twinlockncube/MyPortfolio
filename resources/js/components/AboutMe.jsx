@@ -1,4 +1,5 @@
 import React from 'react';
+import pic from '../../images/me.bg.png'
 
 function AboutMe(props) {
     return (
@@ -7,7 +8,7 @@ function AboutMe(props) {
                     <div className='grid grid-cols-2 gap-4 pt-5'>
                         <div className='w-6/12 sm:w-4/12 px-4'>
                         <h3>The Programmer</h3>
-                        <img src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg" alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />  
+                        <img src={pic} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />  
                         </div>
                         <div className='w-6/12 sm:w-4/12 px-4'>
                         <h3>About Me</h3>
