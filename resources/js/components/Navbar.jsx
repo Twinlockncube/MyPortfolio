@@ -32,7 +32,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#about"
                 >
                   <i className="fas fa-thin fa-user-tie text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About Me</span>
                 </a>
@@ -40,7 +40,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#twista"
                 >
                   <i className="fas fa-envelope text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
                 </a>

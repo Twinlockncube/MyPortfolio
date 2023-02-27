@@ -5,7 +5,7 @@ function AboutMe(props) {
     return (
             <div className='wrapper flex flex-col  mt-3 pb-3 pl-1 pr-1'>
 
-                    <div className='flex flex-row gap-4 pt-5'>
+                    <div className='flex flex-row gap-4 pt-5' id='about'>
                         <div className='w-4/12 sm:w-4/12 px-4'>
                         <h3 className='font-bold'>The Programmer</h3>
                         <img src={pic} alt="..." className="shadow rounded-full max-w-full h-72 align-middle border-none" />  
