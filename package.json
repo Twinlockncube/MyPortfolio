@@ -1,8 +1,11 @@
 {
+    "homepage": "http://twinlockncube.github.io/Myportfolio",
     "private": true,
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "predeploy": "np run build",
+        "deploy": "gh-pages -d build",
         "watch": "vite build --watch"
     },
     "devDependencies": {
