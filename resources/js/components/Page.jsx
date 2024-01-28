@@ -5,6 +5,8 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Projects from './Projects';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from '../containers/Home';
 
 
 if (document.getElementById('root')) {
@@ -12,13 +14,13 @@ if (document.getElementById('root')) {
 
     Index.render(
         <React.StrictMode>
-            <div className='flex flex-col space-y-0'>
-                <Navbar/>
-                <Banner/>
-                <Projects/>
-                <AboutMe/>
-                <Footer/>
-            </div>
+            <Router>
+            <Navbar/>
+                <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/about" element={<AboutMe/>}/>
+                </Routes>
+            </Router>
         </React.StrictMode>
     )
 }

@@ -11,17 +11,20 @@ function Projects(props) {
         {
             description: 'This is a School Management System which includes registration, attendance register, assessment and many other features. Laravel and JQuery were used',
             image:`${project1}`,
-            title:'School Management System'
+            title:'School Management System',
+            url:'https://github.com/Twinlockncube/Tress'
         },
         {
             description: 'A portfolio created in Laravel and React JS. It shows some of my projects',
             image:`${project2}`,
-            title:'My Portfolio'
+            title:'My Portfolio',
+            url: 'https://github.com/Twinlockncube/MyPortfolio'
         },
         {
             description: 'A simple website for capturing individuals\' temparatures after they have been granted access to the premises during Covid. Created using PHP Laravel',
             image:`${project3}`,
-            title:'Temp Web'
+            title:'Temp Web',
+            url: 'https://github.com/Twinlockncube/TempWeb'
         },
 
         
@@ -36,6 +39,7 @@ function Projects(props) {
             image = {project.image}
             description = {project.description}
             title = {project.title}
+            url = {project.url}
             key = {project.title}
         />
     )
@@ -55,26 +59,26 @@ function Projects(props) {
    })
      
 
-   React.useEffect(() => {
+   /*React.useEffect(() => {
     fetch('https://api.quotable.io/random')//Example Api Consumption
-      // .then((response) => {response.json() })
+       .then((response) => {response.json() })
        .then((data) => {
           setCards(source);
        })
        .catch((err) => {
           console.log(err.message);
        });
- }, []);
+ }, []);*/
 
 
 
 
     return (
-    <div className='wrapper flex flex-col border-2 border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
+    <div className='wrapper flex flex-col  border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
         <div className='intro pt-3 flex justify-center'>
             <span className='text-xl'>Explore the projects completed using various tools in the Web Stack</span>
         </div>
-        <div className='flex flex-row gap-4 pt-5'>
+        <div className='flex flex-col lg:flex-row sm:flex-col gap-4 pt-5 mx-auto'>
             {card_rows}
         </div>
     </div>

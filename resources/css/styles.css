@@ -5,3 +5,7 @@
 .top_container{
     margin-left: 2vw;
 }
+
+img {
+    max-width: 100%;
+}

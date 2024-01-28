@@ -4,25 +4,15 @@ import banner from '../../images/hacker.jpg';
 
 function Banner(props) {
     const the_style ={ 
-        width:'100vw',
-        height:'75vh',
-        backgroundImage:`url(${banner})`,
-        backgroundRepeat: 'no-repeat',
-        
-        color: 'white',
-        backgroundSize: 'cover',
-        
+        height:'50vh',
+        backgroundImage:`url(${banner})`,   
     };
-    const test_style = {
-        backgroundColor:'blue',
-        width: '100vw',
-        height: '75vh'
-    }
     
     return (
-        <div style={the_style} className='px-0 py-0 flex flex-col flex-wrap space-y-12 items-center justify-center'>
-            <div className='motto'>For all Web solutions using PHP(Laravel), Javascript, CSS, HTML</div>
-            <div><button className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>Projects</button></div>
+        <div style={the_style} className='px-4 bg-cover bg-center py-0 flex flex-col flex-wrap space-y-12 items-center justify-center text-gray-300'>
+            <div className='py-4 px-4 w-1/2 lg:w-1/4 mx-auto bg-black bg-opacity-50 rounded-md'>
+                Hello World! Let's turn your digital dreams into reality with JavaScript, PHP(including laravel) CSS and  HTML
+                </div>
         </div>
     );
 }
