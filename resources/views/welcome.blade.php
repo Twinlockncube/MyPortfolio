@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio</title>
+	<title>twinlock.ncube</title>
 
     <script type="module">
     import RefreshRuntime from "http://localhost:5173/@react-refresh"

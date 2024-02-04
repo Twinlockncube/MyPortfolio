@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import AboutMe from './AboutMe';
-import Banner from './Banner';
-import Footer from './Footer';
 import Navbar from './Navbar';
-import Projects from './Projects';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from '../containers/Home';
 

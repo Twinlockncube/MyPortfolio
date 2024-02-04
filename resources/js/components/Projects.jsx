@@ -76,7 +76,7 @@ function Projects(props) {
     return (
     <div className='wrapper flex flex-col  border-slate-700  rounded mt-3 pb-3 pl-1 pr-1'>
         <div className='intro pt-3 flex justify-center'>
-            <span className='text-xl'>Explore the projects completed using various tools in the Web Stack</span>
+            <span className='text-xl'>Playing with code</span>
         </div>
         <div className='flex flex-col lg:flex-row sm:flex-col gap-4 pt-5 mx-auto'>
             {card_rows}
